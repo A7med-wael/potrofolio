@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Font-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="Style.css">
+    <title>Responsive Personal Portfolio Website Design</title>
+</head>
+<body>
+    <!-- Header -->
+     <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+     </header>
+
+     <!-- Home Section -->
+      <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hi, My Name</h3>
+            <h1>Ahmed wael</h1>
+            <h3>And I'm a <span class="multiple-text"></span></h3>
+            <p>
+                I am dedicated to excelling in both cybersecurity and front-end development.
+                With a strong foundation in programming and problem-solving,
+                my current focus is on cybersecurity, where I'm pursuing certifications like Security+ and eJPT to gain practical and in-depth skills in penetration testing.
+            </p>
+            <div class="social-media">
+                <a href="https://www.facebook.com/profile.php?id=100007356857418&mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://wa.me/qr/ZGHSX5UIABTCH1"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/ahmedwael2120/profilecard/?igsh=djRoYnh5Y3R6bDdw"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/ahmed-wael-200bb8290?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/A7med-wael"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <a href="Imgs/Ahmed-Wael-Resume.pdf" download="Ahmed-Wael-Resume.pd" class="btn">Download CV</a>
+        </div>
+        <div class="home-img">
+            <img src="Imgs/Picsart_24-10-28_05-06-29-904.png" alt="">
+        </div>
+      </section>
+
+    <!-- About Section -->
+     <section class="about" id="about">
+        <div class="about-img">
+            <img src="Imgs/Picsart_24-10-28_17-49-54-781.jpg" alt="">
+        </div>
+        <div class="about-contant">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Penetration Tester</h3>
+            <p>
+                Cybersecurity Enthusiast, Aspiring Penetration Tester, and Software Developer<br>
+                As a third-year Computer Science student with a profound interest in cybersecurity,<br>
+                particularly in penetration testing, I am committed to advancing my skills to the highest professional standard.<br><br>
+                My academic journey has provided me with a broad and diverse foundation across programming and software development.<br><br>
+                I am well-versed in languages like C++, C#, and Java, where I have delved into essential concepts such as Object-Oriented Programming (OOP) and Data Structures.
+                <span id="more-text" style="display: none;">
+                    In addition to my programming skills, I have experience across both front-end and back-end web development,<br>
+                    with proficiency in technologies like HTML, CSS, JavaScript, PHP, Python, and MySQL.<br><br>
+                    I have also developed a solid foundation in network protocols through certifications like Network+ and CCNA,
+                    which have enhanced my understanding of secure and efficient data transmission.<br><br>
+                    My commitment to problem-solving is further demonstrated by my participation in competitive programming,<br>
+                    where I have honed my analytical and algorithmic skills through the ECPC competition.<br><br>
+                    With a deep focus on cybersecurity, I am now expanding my practical knowledge through certifications like Security+ and eJPT,<br>
+                    striving to become a highly capable penetration tester with a well-rounded technical skill set.
+                </span>
+            </p>
+            <a href="javascript:void(0);" class="btn" onclick="toggleText()" id="toggle-btn">Read more</a>
+        </div>
+     </section>
+    
+    <!-- Services Section --> 
+     <section class="services" id="services">
+        <h2 class="heading">My <span>Services</span></h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <i class="fa-solid fa-code"></i>
+                <h3>Web Development</h3>
+                <p>I build responsive, user-friendly websites that blend visual appeal with robust performance, covering both front-end design and back-end development to deliver secure, tailored solutions.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="services-box">
+                <i class="fa-solid fa-user-shield"></i>
+                <h3>Penetration Testing</h3>
+                <p>I help secure your systems by identifying vulnerabilities through simulated attacks, providing insights to enhance your defenses effectively.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="services-box">
+                <i class="fa-solid fa-bug"></i>
+                <h3>Bug Hunting</h3>
+                <p>I conduct bug hunting to identify and report security vulnerabilities in applications, providing detailed insights to enhance reliability and performance before issues affect users.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+     </section>
+
+     <!-- Portfolio Section -->
+      <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest <span>Projects</span></h2>
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="Imgs/Untitled.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Front-End Interface for the CodeSoft Website.</p>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="Imgs/design.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>DB Script</h4>
+                    <p>Implementation of a Gym Database.</p>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="Imgs/port.jpeg" alt="">
+                <div class="portfolio-layer">
+                    <h4>System Analysis</h4>
+                    <p>System for Improving Port Services.</p>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="Imgs/dradon-transformed.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Computer Graphic</h4>
+                    <p>Design for Computer Graphics.</p>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="Imgs/Picsart_24-10-28_19-56-27-509.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>PLASTIX</h4>
+                    <p>Plastic Brick Project for Environmental Improvement.</p>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="Imgs/Simulation-app-desk.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Simulation Design</h4>
+                    <p>Simulation App for Improving Queue Services.</p>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
+            </div>
+        </div>
+      </section>
+      <!-- Contact Section -->
+       <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email Address">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Phone Number">
+                <input type="text" placeholder="Email Subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+       </section>
+       <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-text">
+                <p>Copyright &copy; 2024 by @heresthecode | All Rights Reserved.</p>
+            </div>
+
+            <div class="footer-iconTop">
+                <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
+            </div>
+        </footer>
+
+        <!-- Scroll Reveal JS-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!-- Typed JS-->
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+        <!-- Main JS-->
+        <script src="Main.js"></script>
+</body>
+</html>
